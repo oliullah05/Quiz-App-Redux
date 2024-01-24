@@ -137,7 +137,7 @@ import {
          </div>
 
 
-<div className="flex items-center items-end justify-end">
+<div className="flex items-end justify-end">
     <Button  placeholder={""}>Add Quiz</Button>
 </div>
 
