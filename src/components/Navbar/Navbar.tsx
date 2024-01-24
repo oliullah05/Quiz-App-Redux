@@ -73,7 +73,7 @@ export function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar color="deep-purple" placeholder={""} className="mx-auto  max-w-screen-xl px-6 py-3">
+    <Navbar variant="gradient" color="deep-purple" placeholder={""} className="mx-auto  max-w-screen-xl px-6 py-3">
       <div className="flex items-center justify-between text-white">
         <Typography
         placeholder={""}
