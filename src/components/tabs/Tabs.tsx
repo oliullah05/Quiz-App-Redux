@@ -12,6 +12,7 @@ import {
   Cog6ToothIcon,
 } from "@heroicons/react/24/solid";
 import { QuizCard } from "../quizCard/Card";
+import { AddQuizForm } from "../addQuizForm/AddQuizForm";
  
 export function TabsWithIcon() {
   const data = [
@@ -25,8 +26,7 @@ export function TabsWithIcon() {
       label: "Add Quiz",
       value: "add-quiz",
       icon: UserCircleIcon,
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: <AddQuizForm></AddQuizForm>,
     }
   ];
   return (
