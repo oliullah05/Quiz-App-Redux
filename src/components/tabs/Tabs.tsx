@@ -14,8 +14,23 @@ import {
 import { QuizCard } from "../quizCard/Card";
 import { AddQuizForm } from "../addQuizForm/AddQuizForm";
 import { DefaultStepper } from "../addQuizForm/Stepper";
+import { SelectModule } from "../addQuizForm/SelectModule";
  
 export function TabsWithIcon() {
+
+const steps = [
+  {
+    value:0,
+    name:"select module",
+    component:<SelectModule></SelectModule>
+  },
+  {
+    value:1,
+    name:"Add quiz",
+    component:<AddQuizForm></AddQuizForm>
+  },
+]
+
   const data = [
     {
       label: "Quiz List",
@@ -27,7 +42,7 @@ export function TabsWithIcon() {
       label: "Add Quiz",
       value: "add-quiz",
       icon: UserCircleIcon,
-      desc: <DefaultStepper></DefaultStepper>,
+      desc:<QuizCard><DefaultStepper steps={steps}></DefaultStepper></QuizCard>,
     }
   ];
   return (
